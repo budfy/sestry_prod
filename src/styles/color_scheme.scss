@@ -1,0 +1,121 @@
+:root {
+
+  //STYLES: color grey
+  @for $i from 1 through 12 {
+    $r: $i*20;
+    $g: $r;
+    $b: $r;
+
+    --color__grey-#{$r}: rgb(#{$r}, #{$g}, #{$b});
+  }
+
+  //!STYLES: color grey
+
+  //STYLES: colors red
+  @for $i from 1 through 6 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__red-#{$r}: rgb(#{$r*4}, #{$g}, #{$b});
+  }
+
+  @for $i from 7 through 10 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__red-#{$r}: rgb(240, #{$g}, #{$b});
+  }
+
+  @for $i from 1 through 6 {
+    $r: $i*20+100;
+    $g: $r;
+    $b: $r;
+
+    --color__red-#{$r}: rgb(240, #{$g}, #{$b});
+  }
+
+  //!STYLES: colors red
+
+  //STYLES: colors green
+  @for $i from 1 through 6 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__green-#{$r}: rgb(#{$r}, #{$g*4}, #{$b});
+  }
+
+  @for $i from 7 through 10 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__green-#{$r}: rgb(#{$r}, 240, #{$b});
+  }
+
+  @for $i from 1 through 6 {
+    $r: $i*20+100;
+    $g: $r;
+    $b: $r;
+
+    --color__green-#{$r}: rgb(#{$r}, 240, #{$b});
+  }
+
+  //!STYLES: colors green
+
+  //STYLES: colors blue
+  @for $i from 1 through 6 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__blue-#{$r}: rgb(#{$r}, #{$g}, #{$b*4});
+  }
+
+  @for $i from 7 through 10 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__blue-#{$r}: rgb(#{$r}, #{$g}, 240);
+  }
+
+  @for $i from 1 through 6 {
+    $r: $i*20+100;
+    $g: $r;
+    $b: $r;
+
+    --color__blue-#{$r}: rgb(#{$r}, #{$g}, 240);
+  }
+
+  //!STYLES: colors blue
+
+  //STYLES: colors purple
+  @for $i from 1 through 6 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__purple-#{$r}: rgb(#{$r*4}, #{$g}, #{$b*4});
+  }
+
+  @for $i from 7 through 10 {
+    $r: $i*10;
+    $g: $r;
+    $b: $r;
+
+    --color__purple-#{$r}: rgb(240, #{$g}, 240);
+  }
+
+  @for $i from 1 through 6 {
+    $r: $i*20+100;
+    $g: $r;
+    $b: $r;
+
+    --color__purple-#{$r}: rgb(240, #{$g}, 240);
+  }
+
+  //!STYLES: colors purple
+}

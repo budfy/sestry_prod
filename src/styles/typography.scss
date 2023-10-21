@@ -1,0 +1,41 @@
+body,
+p,
+blockquote,
+button,
+input {
+  font-family: 'Nunito',
+    'Helvetica Neue',
+    'Arial',
+    sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: var(--color__grey-40);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: 'Montserrat Alternates',
+    'Gill Sans',
+    'Avantgarde',
+    'TeX Gyre Adventor',
+    'URW Gothic L',
+    sans-serif;
+
+}
+
+@for $i from 1 through 6 {
+  $s: (7-$i)/2+0.5;
+
+  h#{$i},
+  .--h#{$i} {
+    font-size: #{$s}rem;
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+    padding: 0;
+  }
+}

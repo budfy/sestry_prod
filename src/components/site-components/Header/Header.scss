@@ -1,0 +1,105 @@
+.header {
+  padding: 0.5rem 0;
+  box-shadow: 0.25rem 0 0.5rem color-mix(in srgb, var(--color__grey-120) 60%, transparent);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: end;
+  }
+
+  &__main-link {
+    display: block;
+    width: fit-content;
+    height: 5rem;
+    transition: 0.25s;
+    transform-origin: center;
+    color: black;
+
+    &:hover {
+      transform: scale(1.025);
+    }
+
+    &:focus {
+      outline: transparent;
+    }
+
+    &:focus-visible {
+      color: var(--color__blue-40);
+    }
+
+    &:active {
+      transform: scale(.975);
+    }
+  }
+
+  &__logo {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__menu {
+    justify-self: center;
+    padding-bottom: 0.5rem;
+  }
+
+  &__cart {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    justify-self: flex-end;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color__blue-50);
+    }
+
+    &:focus {
+      outline: transparent;
+    }
+
+    &:focus-visible {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: var(--color__purple-50);
+    }
+  }
+
+  &__cart-tooltip {
+    position: absolute;
+    display: block;
+    top: 0.25rem;
+    right: 0.25rem;
+    font-size: 0.75rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 3rem;
+      box-shadow: 0.5rem 0.5rem 1rem color-mix(in srgb, var(--color__grey-120) 50%, transparent);
+      background-color: var(--color__red-60);
+      opacity: 0.75;
+    }
+  }
+
+  &__cart-tooltip-text {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    color: white;
+  }
+}
