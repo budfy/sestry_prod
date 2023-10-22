@@ -29,7 +29,7 @@ label {
 }
 
 @for $i from 1 through 6 {
-  $s: (7-$i)/2+0.5;
+  $s: calc((7-#{$i})/ 2 + 0.5);
 
   h#{$i},
   .--h#{$i} {
