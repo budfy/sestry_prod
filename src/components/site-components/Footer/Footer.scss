@@ -1,0 +1,28 @@
+.footer {
+  padding: 1rem 0;
+  background-color: var(--color__grey-80);
+  color: white;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    grid-gap: 1rem;
+  }
+
+  &__logo {
+    height: 10rem;
+    display: block;
+  }
+
+  &__logo-img {
+    display: block;
+    object-fit: contain;
+    height: 100%;
+  }
+
+  &__copy {
+    grid-column: span 3;
+  }
+}
