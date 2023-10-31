@@ -1,9 +1,9 @@
-import Container from '../../components/base-components/Container';
+import Hero from 'components/site-components/Hero/Hero';
 
 export default function IndexRoute (props){
   return(
-    <Container>
-      
-</Container>
+    <>
+      <Hero />
+    </>
   );
 }

@@ -3,9 +3,9 @@ import './Header.scss';
 import {Bag, BagHeart} from '@styled-icons/bootstrap'
 import {useEffect, useState} from 'react';
 
-import Container from '../../base-components/Container';
-import { ReactComponent as HeaderLogo } from '../../../assets/images/logo/logo_h.svg';
-import MenuLink from '../../base-components/MenuLink';
+import Container from 'components/base-components/Container';
+import { ReactComponent as HeaderLogo } from 'assets/images/logo/logo_h.svg';
+import MenuLink from 'components/base-components/MenuLink';
 import { NavLink } from 'react-router-dom';
 
 export default function Header (props)
@@ -28,6 +28,7 @@ export default function Header (props)
           </NavLink>
           <nav className="header__menu">
             <MenuLink className='header__menu-link' to='./catalog' >Каталог</MenuLink>
+            <MenuLink className='header__menu-link' to='./testimonials' >Відгуки</MenuLink>
             <MenuLink className='header__menu-link' to='./about' >Про нас</MenuLink>
             <MenuLink className='header__menu-link' to='./delivery' >Доставка і оплата</MenuLink>
             <MenuLink className='header__menu-link' to='./contacts' >Контакти</MenuLink>
