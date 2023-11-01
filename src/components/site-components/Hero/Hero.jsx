@@ -30,9 +30,6 @@ export default function Hero (props)
           <img src={logo} alt=""/>
           </NavLink>
           </HeroSlide>
-        <HeroSlide >
-          <img src={logo} alt=""/>
-          </HeroSlide>
       </Swiper>
   </div>
 )
