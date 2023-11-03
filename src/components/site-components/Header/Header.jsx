@@ -1,12 +1,13 @@
 import './Header.scss';
 
-import {Bag, BagHeart} from '@styled-icons/bootstrap'
 import {useEffect, useState} from 'react';
 
 import Container from 'components/base-components/Container';
 import { ReactComponent as HeaderLogo } from 'assets/images/logo/logo_h.svg';
 import MenuLink from 'components/base-components/MenuLink';
 import { NavLink } from 'react-router-dom';
+// import {Bag, BagHeart} from '@styled-icons/bootstrap'
+import Social from 'components/site-components/Social/Social';
 
 export default function Header (props)
 {
@@ -33,10 +34,11 @@ export default function Header (props)
             <MenuLink className='header__menu-link' to='./delivery' >Доставка і оплата</MenuLink>
             <MenuLink className='header__menu-link' to='./contacts' >Контакти</MenuLink>
           </nav>
-          <button className='header__cart' type="button" title='Корзина' aria-label='Корзина'>
+          {/* <button className='header__cart' type="button" title='Корзина' aria-label='Корзина'>
             { full_bag ? <BagHeart className='header__cart-icon'/> : <Bag className='header__cart-icon'/> }
             {full_bag?<span className='header__cart-tooltip'><span className='header__cart-tooltip-text'>{props.cart_full}</span></span>:''}
-          </button>
+          </button> */}
+          <Social className="header__social"/>
         </div>
       </Container>
     </header>

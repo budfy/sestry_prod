@@ -4,7 +4,7 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr auto 1fr;
     grid-gap: 1rem;
     align-items: end;
   }
@@ -101,5 +101,12 @@
     z-index: 1;
     font-weight: 700;
     color: white;
+  }
+
+  &__social {
+    .social__item {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
 }
