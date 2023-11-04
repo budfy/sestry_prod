@@ -29,17 +29,52 @@ label {
     'TeX Gyre Adventor',
     'URW Gothic L',
     sans-serif;
-
 }
 
-@for $i from 1 through 6 {
-  $s: calc((7-#{$i})/ 2 + 0.5);
+h1,
+.--h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
 
-  h#{$i},
-  .--h#{$i} {
-    font-size: #{$s}rem;
-    font-weight: 700;
-    margin: 0.5em 0 0 0;
-    padding: 0;
-  }
+h2,
+.--h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+h3,
+.--h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+h4,
+.--h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+h5,
+.--h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+h6,
+.--h6 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 0.5em 0 0 0;
+  padding: 0;
 }

@@ -6,8 +6,10 @@ import Container from 'components/base-components/Container';
 import { ReactComponent as HeaderLogo } from 'assets/images/logo/logo_h.svg';
 import MenuLink from 'components/base-components/MenuLink';
 import { NavLink } from 'react-router-dom';
-// import {Bag, BagHeart} from '@styled-icons/bootstrap'
 import Social from 'components/site-components/Social/Social';
+
+// import {Bag, BagHeart} from '@styled-icons/bootstrap'
+
 
 export default function Header (props)
 {
@@ -38,7 +40,7 @@ export default function Header (props)
             { full_bag ? <BagHeart className='header__cart-icon'/> : <Bag className='header__cart-icon'/> }
             {full_bag?<span className='header__cart-tooltip'><span className='header__cart-tooltip-text'>{props.cart_full}</span></span>:''}
           </button> */}
-          <Social className="header__social"/>
+          <Social className="header__social"position="header"/>
         </div>
       </Container>
     </header>
